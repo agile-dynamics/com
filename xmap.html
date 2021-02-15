@@ -1,0 +1,447 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <meta name="robots" content="noindex">
+  <title>CodePen - (( XMAP ))</title>
+  
+  
+  
+  
+<style>
+html {
+  --font-mono: Consolas, Monaco, "Andale Mono", monospace;
+
+  --color-blue: #006688;
+  --color-red: #aa4400;
+  --color-green: #006622;
+  --color-orange: #866400;
+  --color-purple: #664466;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: right;
+  justify-content: center;
+  padding: 0rem;
+  background: #2f3437;
+  color: #888888;
+  font-size: 10px;
+  text-decoration: none;
+}
+ul.tree a {
+  border: 2px solid #cccc00;
+  color: white;
+  display: block;
+  height: 1em;
+  padding: 0.2em 0.2em 0.2em 0.2em;
+  background-color: #aa4400;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+ul.tree {
+  font: bold 160%/1 var(--font-mono);
+  --dx: 2rem;
+}
+
+ul.tree,
+ul.tree ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.tree > li {
+  margin: 0;
+}
+ul.tree li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0.3em var(--dx);
+}
+
+ul.tree span {
+  padding: 0.3em 0.5em 0.15em;
+  background: var(--color-red);
+  border-radius: 0.4rem;
+  border: 1px solid #888888;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  white-space: prewrap;
+  font-size: 20px;
+  color: white;
+}
+
+ul.tree li li span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: var(--dx);
+  height: 0.09em;
+  transform: translateY(-50%) skewY(calc(var(--angle, 0) * 1deg))
+    scaleY(calc(1 / var(--cos-angle, 1)));
+  transform-origin: right;
+  background: inherit;
+  background-image: linear-gradient(to right, var(--parent-color), transparent);
+}
+
+ul.tree > li li span {
+  /* Second+ level */
+  background: var(--color-orange);
+  --parent-color: var(--color-red);
+}
+
+ul.tree > li li li span {
+  /* Third+ level */
+  background: var(--color-green);
+  --parent-color: var(--color-orange);
+}
+ul.tree > li li li li span {
+  /* Fourth+ level */
+  background: var(--color-blue);
+  --parent-color: var(--color-green);
+}
+ul.tree > li li li li li span {
+  /* Fifth+ level */
+  background: var(--color-purple);
+  --parent-color: var(--color-blue);
+}
+
+ul.tree > li li li li li li span {
+  /* Sixth+ level */
+  background: var(--color-blue);
+  --parent-color: var(--color-purple);
+}
+ul.tree > li li li li li li li span {
+  /* Sixth+ level */
+  background: var(--color-green);
+  --parent-color: var(--color-blue);
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <ul>
+<li>EXEC
+<ul>
+<li>LIFE AREAS <a href="https://www.wolframcloud.com/env/xyzormax/AgileDynamics">💥</a>
+<ul>
+<li>Major Life Areas<a href="https://www.notion.so/agiledynamics/AGILE-DYNAMICS-c8ade146db8943a49cbc0a377d58514e">🌈</a>
+<ul>
+<li>Usually
+<ul>
+<li>WORK
+<ul>
+<li>Business</li>
+<li>Career</li>
+</ul>
+</li>
+<li>LIFE
+<ul>
+<li>Home Life</li>
+<li>Finances</li>
+</ul>
+</li>
+<li>SELF
+<ul>
+<li>Mind</li>
+<li>Body</li>
+<li>Spirit</li>
+<li>Leisure</li>
+</ul>
+</li>
+<li>PEOPLE
+<ul>
+<li>Partner</li>
+<li>Family</li>
+<li>Friends</li>
+<li>Social Groups</li>
+</ul>
+</li>
+<li>but sometimes
+<ul>
+<li>Self Care
+<ul>
+<li>things that make me well &amp; happy</li>
+</ul>
+</li>
+<li>Chores
+<ul>
+<li>stuff that must be done daily</li>
+</ul>
+</li>
+<li>Projects
+<ul>
+<li>crafts &amp; creative stuff</li>
+</ul>
+</li>
+<li>Work
+<ul>
+<li>what earns income</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>AREAs
+<ul>
+<li>Have a MISSION
+<ul>
+<li>DONT Want?</li>
+<li>DO Want?</li>
+<li>Mission Statement</li>
+<li>GOALS
+<ul>
+<li>→ PROJECTS</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>PROJECTS
+<ul>
+<li>Have OBJECTIVES
+<ul>
+<li>again..
+<ul>
+<li>DONT Want?</li>
+<li>DO Want?</li>
+<li>Misssion Statement</li>
+<li>TARGETS
+<ul>
+<li>What to Achieve</li>
+<li>By When</li>
+<li>→ TASKS</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>TASKS
+<ul>
+<li>Simple Action
+<ul>
+<li>action words</li>
+<li>have Priorities
+<ul>
+<li>VIP
+<ul>
+<li>Very Important
+<ul>
+<li>Life Changing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>BAU
+<ul>
+<li>Business As Usual</li>
+</ul>
+</li>
+<li>URG
+<ul>
+<li>Urgent
+<ul>
+<li>only a FEW of these
+<ul>
+<li>ALERTs
+<ul>
+<li>if too many</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>have a Checklist
+<ul>
+<li>called Sub-Tasks</li>
+</ul>
+</li>
+<li>have Timeline
+<ul>
+<li>Start date
+<ul>
+<li>not seen until then</li>
+</ul>
+</li>
+<li>End date
+<ul>
+<li>ALERTs
+<ul>
+<li>if not done by then</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SUB-TASKS
+<ul>
+<li>simple Checklist
+<ul>
+<li>action DONE
+<ul>
+<li>tick Box!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>inside each Task
+<ul>
+<li>when Completed
+<ul>
+<li>Task is DONE</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SPRINTS
+<ul>
+<li>do Handful
+<ul>
+<li>of Sprints
+<ul>
+<li>each
+<ul>
+<li>Morning</li>
+<li>Afternoon</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>menu of dozen Tasks
+<ul>
+<li>from different Projects</li>
+<li>pick 5 or 6
+<ul>
+<li>to work on
+<ul>
+<li>a few of each
+<ul>
+<li>VIP</li>
+<li>BAU</li>
+<li>Urgent</li>
+</ul>
+</li>
+<li>short sharp focus on each
+<ul>
+<li>tick-off
+<ul>
+<li>a few Sub-Tasks</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Sprint lasts
+<ul>
+<li>25 min
+<ul>
+<li>Pomodorro method</li>
+</ul>
+</li>
+<li>then 5 min break</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/blissfuljs/1.0.4/bliss.shy.js'></script>
+      <script id="rendered-js" >
+var $ = Bliss,
+$$ = Bliss.$;
+document.getElementsByTagName("ul")[0].className = "tree";
+
+$$("ul.tree").forEach(ul => {
+  $$("li", ul).forEach(li => {
+    if (li.childNodes[0].nodeType == 3) {
+      $.create("span", {
+        around: li.childNodes[0] });
+
+    }
+  });
+  $$("li li > span", ul).forEach(span => {
+    var li = span.closest("ul").parentNode;
+    var lineCS = getComputedStyle(span, "::before");
+    var top = span.parentNode.offsetTop + span.parentNode.offsetHeight / 2;
+    var parentTop = li.offsetHeight / 2;
+    var dy = top - parentTop;
+    var dx = parseInt(lineCS.width);
+    var angle = Math.atan2(dy, dx);
+    var θ = angle * 180 / Math.PI;
+    span.style.setProperty("--angle", θ);
+    span.style.setProperty("--cos-angle", Math.abs(Math.cos(angle)));
+  });
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
