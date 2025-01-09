@@ -216,13 +216,34 @@
   "nodeKeyProperty": "id",
   "pointsDigits": 0,
   "nodeDataArray": [
-{"id":-1,"loc":"-927 -315","type":"Start","text":"Start"},
-{"id":0,"loc":"-678 -234","text":"Object"},
-{"id":-2,"loc":"-365 -84","type":"End","text":"End"}
+{"id":-1,"loc":"-927 -315","type":"Start","text":"ORDER"},
+{"id":0,"loc":"-678 -220.35","text":"Editing"},
+{"id":-2,"loc":"-356.2 30.900000000000006","type":"End","text":"Archived"},
+{"text":"In Cart","loc":"-422.4 -315.06547056686054","id":-4},
+{"text":"Confirmed","loc":"-257 -164.70000000000002","id":-5},
+{"text":"Paid","loc":"-72.75 -304.35","id":-6},
+{"text":"Shipping","loc":"88.40000000000003 -247.64999999999998","id":-7},
+{"text":"Delivered","loc":"4.90000000000002 -58.64999999999999","id":-8},
+{"text":"Returning","loc":"215.39999999999998 -58.64999999999998","id":-9},
+{"text":"Returned","loc":"627.5 -119.54999999999998","id":-10},
+{"text":"Refunded","loc":"604.9 12.75","id":-11},
+{"text":"Undelivered","loc":"336.7 -240.29999999999995","id":-12}
 ],
   "linkDataArray": [
-{"from":-1,"to":0,"progress":true,"text":"create","curviness":-10,"points":[-858,-267,-799,-245,-738,-230,-678,-220]},
-{"from":0,"to":-2,"progress":true,"text":"delete","points":[-611,-210,-508,-197,-424,-152,-355,-76]}
+{"from":-1,"to":0,"progress":true,"text":"create","curviness":-10,"points":[-832,-248,-782,-228,-730,-214,-678,-206]},
+{"from":0,"to":-2,"progress":true,"text":"delete","points":[-648,-182,-700,23,-400,-68,-331,40]},
+{"from":0,"to":-4,"text":"cust: ADD PROD","points":[-617,-220,-545,-272,-490,-294,-422,-295]},
+{"from":-4,"to":-5,"text":"cust: CONFIRM","points":[-355,-283,-293,-259,-250,-221,-221,-165]},
+{"from":-5,"to":-6,"text":"sys: PAYMENT RCVD","points":[-200,-165,-167,-223,-129,-258,-73,-277]},
+{"from":-6,"to":-7,"text":"driver: PICK","points":[-20,-291,32,-301,77,-287,113,-247]},
+{"from":-7,"to":-8,"text":"driver: DELIVERED","points":[129,-209,129,-148,110,-99,67,-58]},
+{"from":-8,"to":-9,"text":"cust: RETURN","points":[86,-58,135,-81,179,-82,224,-58]},
+{"from":-9,"to":-10,"text":"admin: RECEIVED","points":[304,-55,418,-95,518,-111,628,-103]},
+{"from":-10,"to":-11,"text":"sys: REFUND","points":[679,-81,697,-45,694,-15,667,13]},
+{"from":-7,"to":-12,"text":"driver: FAILED","points":[171,-244,233,-265,289,-265,346,-240]},
+{"from":-12,"to":-10,"text":"admin: RECEIVED","points":[419,-202,501,-151,588,-181,651,-119]},
+{"from":-11,"to":-2,"text":"sys: ARCHIVE","points":[605,40,324,92,40,109,-244,90]},
+{"from":-8,"to":-2,"text":"sys: ARCHIVE","points":[26,-21,-52,46,-142,82,-244,85]}
 ]}
 </textarea>
   </div>
