@@ -214,38 +214,18 @@
       <button onclick="load()">Load</button>
       Diagram Model saved in JSON format:
     </div>
-    <textarea id="mySavedModel" style="width: 100%; height: 300px">{ "class": "go.GraphLinksModel",
+    <textarea id="mySavedModel" style="width: 100%; height: 300px">{ "class": "GraphLinksModel",
   "nodeKeyProperty": "id",
   "pointsDigits": 0,
   "nodeDataArray": [
-  {"id":-1, "loc":"155 -150", "type":"Start", "text":"Start" },
-  {"id":0, "loc":"190 15", "text":"Shopping"},
-  {"id":1, "loc":"353 32", "text":"Browse Items"},
-  {"id":2, "loc":"353 166", "text":"Search Items"},
-  {"id":3, "loc":"552 12", "text":"View Item"},
-  {"id":4, "loc":"700 -95", "text":"View Cart"},
-  {"id":5, "loc":"660 100", "text":"Update Cart"},
-  {"id":6, "loc":"850 20", "text":"Checkout"},
-  {"id":-2, "loc":"830 200", "type":"End", "text":"End" }
-  ],
+{"id":-1,"loc":"-284 -85","type":"Start","text":"Start"},
+{"id":0,"loc":"-57 -70","text":"Y"},
+{"id":-2,"loc":"297 -84","type":"End","text":"End"}
+],
   "linkDataArray": [
-    { "from": -1, "to": 0, "progress": true, "text": "Visit online store", "curviness": -10 },
-    { "from": 0, "to": 1,  "progress": true, "text": "Browse" },
-    { "from": 0, "to": 2,  "progress": true, "text": "Use search bar", "curviness": -70 },
-    { "from": 1, "to": 2,  "progress": true, "text": "Use search bar" },
-    { "from": 2, "to": 3,  "progress": true, "text": "Click item", "curviness": -70 },
-    { "from": 2, "to": 2,  "progress": false, "text": "Another search", "curviness": 40 },
-    { "from": 1, "to": 3,  "progress": true, "text": "Click item" },
-    { "from": 3, "to": 0,  "progress": false, "text": "Not interested", "curviness": -100 },
-    { "from": 3, "to": 4,  "progress": true, "text": "Add to cart" },
-    { "from": 4, "to": 0,  "progress": false, "text": "More shopping", "curviness": -150 },
-    { "from": 4, "to": 5,  "progress": false, "text": "Update needed", "curviness": 70 },
-    { "from": 5, "to": 4,  "progress": false, "text": "Update made" },
-    { "from": 4, "to": 6,  "progress": true, "text": "Proceed" },
-    { "from": 6, "to": 5,  "progress": false, "text": "Update needed"},
-    { "from": 6, "to": -2, "progress": true, "text": "Purchase made" }
-  ]
-}
+{"from":-1,"to":0,"progress":true,"text":"x","curviness":-10,"points":[-213,-47,-160,-42,-108,-43,-57,-49]},
+{"from":0,"to":-2,"progress":true,"text":"z","points":[-25,-57,83,-95,190,-96,298,-62]}
+]}
     </textarea>
   </div>
 </div>
