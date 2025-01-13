@@ -182,7 +182,7 @@
               margin: 1,
               editable: true, // enable in-place editing
               text: 'Action' // default text
-            }).bind('text')
+            }).bindTwoWay('text')   // POB was bind()
             // editing the text automatically updates the model data
           )
       );
