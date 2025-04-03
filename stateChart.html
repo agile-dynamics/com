@@ -215,39 +215,38 @@
       <button onclick="load()">Load</button>
       Diagram Model saved in JSON format:
     </div>
-    <textarea id="mySavedModel" style="width: 100%; height: 300px">{ "class": "go.GraphLinksModel",
+    <textarea id="mySavedModel" style="width: 100%; height: 300px">
+{ "class": "GraphLinksModel",
   "nodeKeyProperty": "id",
   "pointsDigits": 0,
   "nodeDataArray": [
-  {"id":-1, "loc":"155 -150", "type":"Start", "text":"Start" },
-  {"id":0, "loc":"190 15", "text":"Shopping"},
-  {"id":1, "loc":"353 32", "text":"Browse Items"},
-  {"id":2, "loc":"353 166", "text":"Search Items"},
-  {"id":3, "loc":"552 12", "text":"View Item"},
-  {"id":4, "loc":"700 -95", "text":"View Cart"},
-  {"id":5, "loc":"660 100", "text":"Update Cart"},
-  {"id":6, "loc":"850 20", "text":"Checkout"},
-  {"id":-2, "loc":"830 200", "type":"End", "text":"End" }
-  ],
+{"id":-1,"loc":"-329 -127","type":"Start","text":"Start"},
+{"id":0,"loc":"-208 11","text":"Shopping"},
+{"id":1,"loc":"58 23","text":"Browse Items"},
+{"id":2,"loc":"344 44","text":"Search Items"},
+{"id":3,"loc":"588 23","text":"View Item"},
+{"id":4,"loc":"835 32","text":"View Cart"},
+{"id":5,"loc":"1071 32","text":"Update Cart"},
+{"id":6,"loc":"1289 46","text":"Checkout"},
+{"id":-2,"loc":"1407 218","type":"End","text":"End"}
+],
   "linkDataArray": [
-    { "from": -1, "to": 0, "progress": true, "text": "Visit online store", "curviness": -10 },
-    { "from": 0, "to": 1,  "progress": true, "text": "Browse" },
-    { "from": 0, "to": 2,  "progress": true, "text": "Use search bar", "curviness": -70 },
-    { "from": 1, "to": 2,  "progress": true, "text": "Use search bar" },
-    { "from": 2, "to": 3,  "progress": true, "text": "Click item", "curviness": -70 },
-    { "from": 2, "to": 2,  "progress": false, "text": "Another search", "curviness": 40 },
-    { "from": 1, "to": 3,  "progress": true, "text": "Click item" },
-    { "from": 3, "to": 0,  "progress": false, "text": "Not interested", "curviness": -100 },
-    { "from": 3, "to": 4,  "progress": true, "text": "Add to cart" },
-    { "from": 4, "to": 0,  "progress": false, "text": "More shopping", "curviness": -150 },
-    { "from": 4, "to": 5,  "progress": false, "text": "Update needed", "curviness": 70 },
-    { "from": 5, "to": 4,  "progress": false, "text": "Update made" },
-    { "from": 4, "to": 6,  "progress": true, "text": "Proceed" },
-    { "from": 6, "to": 5,  "progress": false, "text": "Update needed"},
-    { "from": 6, "to": -2, "progress": true, "text": "Purchase made" }
-  ]
-}
-    </textarea>
+{"from":-1,"to":0,"progress":true,"text":"Visit online store","curviness":-10,"points":[-271,-64,-248,-35,-221,-9,-191,11]},
+{"from":0,"to":1,"progress":true,"text":"Browse","points":[-120,39,-63,50,22,105,87,61]},
+{"from":0,"to":2,"progress":true,"text":"Use search bar","curviness":-70,"points":[-157,49,-102,199,222,150,361,82]},
+{"from":1,"to":2,"progress":true,"text":"Use search bar","points":[171,26,238,7,301,13,362,44]},
+{"from":2,"to":3,"progress":true,"text":"Click item","curviness":-70,"points":[423,82,470,118,531,119,607,61]},
+{"from":2,"to":2,"progress":false,"text":"Another search","curviness":40,"points":[410,82,455,160,343,160,388,82]},
+{"from":1,"to":3,"progress":true,"text":"Click item","points":[116,23,128,-133,612,-74,628,23]},
+{"from":3,"to":0,"progress":false,"text":"Not interested","curviness":-100,"points":[620,61,375,450,-225,191,-171,49]},
+{"from":3,"to":4,"progress":true,"text":"Add to cart","points":[675,28,750,5,802,161,865,70]},
+{"from":4,"to":0,"progress":false,"text":"More shopping","curviness":-150,"points":[873,32,814,-184,12,-198,-150,11]},
+{"from":4,"to":5,"progress":false,"text":"Update needed","curviness":70,"points":[904,32,975,-20,1041,-18,1100,32]},
+{"from":5,"to":4,"progress":false,"text":"Update made","points":[1084,70,1025,99,969,99,914,70]},
+{"from":4,"to":6,"progress":true,"text":"Proceed","points":[884,32,925,-117,1288,-85,1327,46]},
+{"from":6,"to":5,"progress":false,"text":"Update needed","points":[1323,84,1265,206,1187,93,1151,70]},
+{"from":6,"to":-2,"progress":true,"text":"Purchase made","points":[1363,84,1413,115,1436,159,1438,218]}
+]}    </textarea>
   </div>
 </div>
 
